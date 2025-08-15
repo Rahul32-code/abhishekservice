@@ -1,0 +1,36 @@
+import React from 'react'
+import Header from './components/Header'
+import Hero from './pages/Hero'
+import Service from './pages/Service'
+import Footer from './components/Footer'
+import About from './pages/About'
+import ButtonWhatsapp from './components/ButtonWhatsapp'
+import PhoneButton from './components/PhoneButton'
+import ContactUs from './pages/ContactUs'
+import { Toaster } from 'react-hot-toast'
+
+
+const App = () => {
+  return (
+    <div className=''>
+      {/* toaster */}
+      <Toaster position='top-center' reverseOrder="false" />
+
+      <Header />
+
+      <Hero />
+      <Service />
+      <About />
+      <ContactUs />
+
+      <Footer />
+
+      {/* whatsapp & Phone */}
+      <ButtonWhatsapp />
+      <PhoneButton />
+
+    </div>
+  )
+}
+
+export default App
