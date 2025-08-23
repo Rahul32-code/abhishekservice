@@ -1,5 +1,5 @@
 import { Phone } from "lucide-react";
-import React from "react";
+import hero from "@/gif/hero.gif";
 
 const Hero = () => {
   return (
@@ -7,14 +7,17 @@ const Hero = () => {
       <div className="container mx-auto px-4 lg:px-20 flex flex-col-reverse lg:flex-row items-center justify-center gap-10">
         {/* Left side - 60% */}
         <div className="lg:flex-[0_0_60%] w-full text-start sm:text-center lg:text-left space-y-6 sm:p-6">
-          <h1 className="text-xl sm:text-4xl lg:text-4xl font-bold leading-tight">
-            Tell Your <span className="text-green-600"> Brand Story </span>{" "}
-            <br /> Just How You Want it
+          <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold leading-tight">
+            Crafting <span className="text-green-600"> Websites </span> That
+            Perform. <br />{" "}
+            <span className="text-green-600">Digital Marketing</span> That
+            Converts.
           </h1>
           <p className="text-gray-700 text-sm lg:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-            doloremque quas debitis ut ad, quam corporis. A doloremque quas
-            debitis ut ad, quam corporis.
+            I build high-performing websites and digital marketing systems that
+            don’t just look great, but drive real business growth. Whether
+            you're launching or scaling, let's build your brand's digital
+            backbone the smart way.
           </p>
           <a
             href="#contact"
@@ -28,7 +31,7 @@ const Hero = () => {
         {/* Right side - 40% */}
         <div className="lg:flex-[0_0_40%] w-full flex justify-center p-6">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdgPIwQyEKCx3wwN8WjrapTyYUBZfRMgPRDw&s"
+            src={hero}
             alt="Hero Image"
             className="max-w-full h-auto rounded-2xl"
           />
