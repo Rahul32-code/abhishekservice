@@ -31,9 +31,9 @@ const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6 text-gray-700 font-medium">
-          {navList.map((link) => (
+          {navList.map((link, index) => (
             <a
-              key={link.href}
+              key={index}
               href={link.href}
               onClick={() => setIsActive(link.label)}
               className={`hover:text-green-700 transition ${

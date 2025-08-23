@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section id="home" className="scroll-m-20 bg-white/25 py-16">
+    <section id="hero" className="scroll-m-20 bg-white/25 py-16">
       <div className="container mx-auto px-4 lg:px-20 flex flex-col-reverse lg:flex-row items-center justify-center gap-10">
         {/* Left side - 60% */}
         <div className="lg:flex-[0_0_60%] w-full text-start sm:text-center lg:text-left space-y-6 sm:p-6">

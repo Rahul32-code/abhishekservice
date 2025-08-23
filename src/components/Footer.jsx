@@ -10,6 +10,7 @@ import {
 import logo from "@/logo.png";
 import { MdOutlineEmail } from "react-icons/md";
 import { li } from "framer-motion/client";
+import { ArrowUp } from "lucide-react";
 
 const socialLinks = [
   {
@@ -133,8 +134,8 @@ const Footer = () => {
             Quick Links
           </h3>
           <ul className="space-y-3 text-gray-300">
-            {quickLinks.map((link) => (
-              <li key={link.href}>
+            {quickLinks.map((link, index) => (
+              <li key={index}>
                 <a href={link.href} className="hover:text-white/20 transition">
                   {link.name}
                 </a>
@@ -148,59 +149,9 @@ const Footer = () => {
       <div className="text-center mt-10 text-sm text-gray-500 border-t border-white/10 pt-6">
         © {new Date().getFullYear()} Rahul. All rights reserved.
       </div>
+
     </footer>
   );
 };
-
-// const Footer = () => {
-//   return (
-//     <footer className="bg-white/25 text-black pt-16 pb-16 relative overflow-hidden">
-//       {/* Optional decorative background image */}
-//       <div className="absolute bottom-0 left-0 right-0 h-20 bg-cover opacity-20"></div>
-
-//       <div className="container mx-auto px-6 relative z-10">
-//         {/* Logo & Social */}
-//         <div className="flex flex-col items-center mb-14">
-//           <div className="flex items-center mb-6">
-//             <div className="bg-white/20 p-3 rounded-full mr-4">
-//               <FaTooth className="text-2xl text-green-600" />
-//             </div>
-//             <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-500">
-//               Abhishek
-//             </h2>
-//           </div>
-
-//           <div className="flex space-x-6 mb-8">
-//             {socialLink.map((link, index) => (
-//               <a
-//                 key={index}
-//                 href={link.href}
-//                 className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 hover:translate-y-1"
-//               >
-//                 {link.icon}
-//               </a>
-//             ))}
-//           </div>
-//         </div>
-
-//         {/* Contact Info */}
-//         <div className="bg-white/5 backdrop:blur-sm p-8 rounded-xl border border-white/10 hover:border-sky-300 transition-colors max-w-md mx-auto">
-//           <h3 className="text-xl flex items-center mb-6 font-semibold">
-//             <FaPhone className="mr-3 text-sky-300" />
-//             Contact Us
-//           </h3>
-//           <ul className="space-y-4">
-//             {contactInfo.map((item, index) => (
-//               <li key={index} className="flex items-start">
-//                 {item.icon}
-//                 {item.text}
-//               </li>
-//             ))}
-//           </ul>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// };
 
 export default Footer;
