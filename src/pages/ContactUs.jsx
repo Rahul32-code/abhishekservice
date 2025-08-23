@@ -27,7 +27,7 @@ const ContactUs = () => {
           <img
             src={contact}
             alt="contact"
-            className="w-auto"
+            className="sm:w-90 lg:w-auto"
           />
         </div>
       </div>
