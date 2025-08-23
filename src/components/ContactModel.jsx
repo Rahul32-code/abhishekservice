@@ -82,7 +82,11 @@ const ContactModal = ({ isOpen, onClose }) => {
                       maxLength={name === "phone" ? 10 : undefined}
                       pattern={pattern}
                       placeholder={
-                        name === "phone" ? "Enter 10-digit mobile number" : name === "email" ? "info@gmail.com" :"john doe"
+                        name === "phone"
+                          ? "Enter 10-digit mobile number"
+                          : name === "email"
+                          ? "info@gmail.com"
+                          : "john doe"
                       }
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400"
                       autoComplete="off"

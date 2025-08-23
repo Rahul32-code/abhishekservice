@@ -13,7 +13,7 @@ const Hero = () => {
             <span className="text-green-600">Digital Marketing</span> That
             Converts.
           </h1>
-          <p className="text-gray-700 text-sm lg:text-lg">
+          <p className="text-gray-700 text-sm lg:text-lg leading-tight  ">
             I build high-performing websites and digital marketing systems that
             don’t just look great, but drive real business growth. Whether
             you're launching or scaling, let's build your brand's digital

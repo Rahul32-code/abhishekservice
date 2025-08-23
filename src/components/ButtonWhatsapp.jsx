@@ -1,4 +1,4 @@
-import { link } from "framer-motion/client";
+
 import { FaWhatsapp } from "react-icons/fa";
 
 const links = [
