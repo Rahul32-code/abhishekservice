@@ -1,1 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+
 @import "tailwindcss";
+
+* {
+  font-family: "Edu NSW ACT Cursive", cursive;
+}
+
+@theme {
+  --color-primary: #003dfc;
+}

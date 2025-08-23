@@ -2,7 +2,6 @@ import { Menu, PhoneCall, X } from "lucide-react";
 import { useState } from "react";
 import logo from "@/logo.png";
 
-
 const navList = [
   { href: "#home", label: "Home" },
   { href: "#services", label: "Services" },
@@ -21,10 +20,9 @@ const Header = () => {
 
   return (
     <header
-  id="hero"
-  className="scroll-mt-20 sticky top-0 z-50 bg-white/20 backdrop-blur-md shadow-md border-b border-white/30"
->
-
+      id="hero"
+      className="scroll-mt-20 sticky top-0 z-50 bg-white/20 backdrop-blur-md shadow-md border-b border-white/30"
+    >
       <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8">
         {/* Logo */}
         <div className="flex items-center space-x-2">
