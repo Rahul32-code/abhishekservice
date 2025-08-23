@@ -1,43 +1,61 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaBlogger, FaBullhorn, FaCloudUploadAlt, FaCreditCard, FaFacebook, FaGoogle, FaLaptopCode, FaPalette, FaPlug, FaRocket, FaSearch, FaShoppingCart, FaSyncAlt, FaTools, FaWordpress} from "react-icons/fa";
+import {
+  FaBlogger,
+  FaBullhorn,
+  FaCloudUploadAlt,
+  FaCreditCard,
+  FaFacebook,
+  FaGlobe,
+  FaGoogle,
+  FaLaptopCode,
+  FaMapMarkerAlt,
+  FaPalette,
+  FaPlug,
+  FaRocket,
+  FaSearch,
+  FaShoppingCart,
+  FaSyncAlt,
+  FaTools,
+  FaWordpress,
+} from "react-icons/fa";
 
 const cards = [
   {
     name: "Search Engine Optimization (SEO)",
     type: "Digital Marketing",
     info: "Boost your website's visibility on Google with Off-Page, On-Page, and Technical SEO.",
-    icon: <FaSearch className="w-10 h-10 text-green-600" />,
+    icon: <FaSearch className="w-10 h-10 text-blue-600" />,
   },
   {
     name: "Google Ads (PPC Marketing)",
     type: "Digital Marketing",
     info: "Instant traffic and leads with highly targeted Google Ads campaigns.",
-    icon: <FaGoogle className="w-10 h-10 text-green-600" />,
+    icon: <FaGoogle className="w-10 h-10 text-red-600" />,
   },
   {
     name: "Meta Ads (Facebook & Instagram)",
     type: "Digital Marketing",
     info: "Run optimized Meta Ads to drive conversions across Facebook and Instagram.",
-    icon:  <FaFacebook className="w-10 h-10 text-green-600" />,
+    icon: <FaFacebook className="w-10 h-10 text-blue-600" />,
   },
   {
     name: "Social Media Marketing (SMM)",
     type: "Digital Marketing",
     info: "Engage and grow your audience across all major social platforms.",
-    icon: <FaBullhorn className="w-10 h-10 text-green-600" />,
+    icon: <FaBullhorn className="w-10 h-10 text-pink-600" />,
   },
   {
     name: "Brand Strategy & Consulting",
     type: "Digital Marketing",
     info: "Shape a unique brand identity that connects and converts.",
-    icon: <FaPalette className="w-10 h-10 text-green-600" />
+    icon: <FaPalette className="w-10 h-10 text-purple-600" />,
   },
   {
     name: "Local SEO / GMB Optimization",
     type: "Digital Marketing",
     info: "Dominate local search results and boost your Google My Business presence.",
-    icon: <FaSearch className="w-10 h-10 text-green-600" />,
+    icon: <FaMapMarkerAlt className="w-10 h-10 text-green-600" />,
   },
   {
     name: "E-commerce Website",
@@ -92,6 +110,12 @@ const cards = [
     type: "Web Design & Development",
     info: "Cloud hosting setup on platforms like Vercel, Netlify, or AWS.",
     icon: <FaCloudUploadAlt className="w-10 h-10 text-cyan-600" />,
+  },
+  {
+    name: "Business Website",
+    type: "Web Design & Development",
+    info: "Professional websites tailored for businesses to showcase services, build credibility, and generate leads.",
+    icon: <FaGlobe className="w-10 h-10 text-blue-600" />,
   },
 ];
 
