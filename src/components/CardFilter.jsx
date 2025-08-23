@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaBullhorn, FaFacebook, FaGoogle, FaLaptopCode, FaPalette, FaSearch, FaTooth } from "react-icons/fa";
+import { FaBlogger, FaBullhorn, FaCloudUploadAlt, FaCreditCard, FaFacebook, FaGoogle, FaLaptopCode, FaPalette, FaPlug, FaRocket, FaSearch, FaShoppingCart, FaSyncAlt, FaTools, FaWordpress} from "react-icons/fa";
 
 const cards = [
   {
@@ -34,22 +34,64 @@ const cards = [
     icon: <FaPalette className="w-10 h-10 text-green-600" />
   },
   {
-    name: "CMS Website Services",
-    type: "Web Design & Service",
-    info: "Get modern, easy-to-manage CMS websites built on WordPress & more.",
-    icon: <FaLaptopCode className="w-10 h-10 text-green-600" />,
-  },
-  {
     name: "Local SEO / GMB Optimization",
     type: "Digital Marketing",
     info: "Dominate local search results and boost your Google My Business presence.",
     icon: <FaSearch className="w-10 h-10 text-green-600" />,
   },
   {
-    name: "Custom Web Development",
-    type: "Web Design & Service",
-    info: "Fast, secure, scalable websites tailored for your brand and goals.",
-    icon: <FaLaptopCode className="w-10 h-10 text-green-600" />,
+    name: "E-commerce Website",
+    type: "Web Design & Development",
+    info: "Single or multi-vendor online stores with product, cart, and checkout features.",
+    icon: <FaShoppingCart className="w-10 h-10 text-blue-600" />,
+  },
+  {
+    name: "CMS Development",
+    type: "Web Design & Development",
+    info: "Easy-to-manage websites using coding.",
+    icon: <FaWordpress className="w-10 h-10 text-indigo-600" />,
+  },
+  {
+    name: "Blog Website",
+    type: "Web Design & Development",
+    info: "user-friendly blogging systems to engage your audience.",
+    icon: <FaBlogger className="w-10 h-10 text-orange-600" />,
+  },
+  {
+    name: "Landing Page Development",
+    type: "Web Design & Development",
+    info: "High-converting, fast-loading pages for product launches or marketing campaigns.",
+    icon: <FaRocket className="w-10 h-10 text-pink-600" />,
+  },
+  {
+    name: "Admin Panel Development",
+    type: "Web Design & Development",
+    info: "Powerful dashboards to manage users, data, and site content.",
+    icon: <FaTools className="w-10 h-10 text-gray-700" />,
+  },
+  {
+    name: "Payment Gateway Integration",
+    type: "Web Design & Development",
+    info: "Stripe, Razorpay, PayPal, and other gateways integrated securely.",
+    icon: <FaCreditCard className="w-10 h-10 text-green-600" />,
+  },
+  {
+    name: "API Integration",
+    type: "Web Design & Development",
+    info: "Seamless connections to third-party services or internal systems.",
+    icon: <FaPlug className="w-10 h-10 text-yellow-600" />,
+  },
+  {
+    name: "Website Maintenance & Support",
+    type: "Web Design & Development",
+    info: "Ongoing updates, backups, and security monitoring.",
+    icon: <FaSyncAlt className="w-10 h-10 text-teal-600" />,
+  },
+  {
+    name: "Hosting & Deployment",
+    type: "Web Design & Development",
+    info: "Cloud hosting setup on platforms like Vercel, Netlify, or AWS.",
+    icon: <FaCloudUploadAlt className="w-10 h-10 text-cyan-600" />,
   },
 ];
 
