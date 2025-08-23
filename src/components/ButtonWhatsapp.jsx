@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const links = [
   {
-    href: "https://wa.me/919266594942?text=Hi%2C%20I%27m%20interested%20in%20your%20services",
+    href: "https://wa.me/919266594942",
     icon: <FaWhatsapp className="text-6xl w-10 h-10" />,
   },
 ];
