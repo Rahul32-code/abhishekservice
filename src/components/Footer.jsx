@@ -9,26 +9,24 @@ import {
 } from "react-icons/fa";
 import logo from "@/logo.png";
 import { MdOutlineEmail } from "react-icons/md";
-import { li } from "framer-motion/client";
-import { ArrowUp } from "lucide-react";
 
 const socialLinks = [
   {
-    href: "#",
+    href: "https://www.instagram.com/abhishek.dmagency/",
     label: "Instagram",
     icon: <FaInstagram />,
     color: "text-white",
     bg: "bg-[linear-gradient(to_right,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)]",
   },
   {
-    href: "#",
+    href: "https://www.facebook.com/abhishek.agency",
     label: "Facebook",
     icon: <FaFacebookF />,
     color: "text-white",
     bg: "bg-blue-800",
   },
   {
-    href: "#",
+    href: "https://www.linkedin.com/company/abhishek-dm-agency",
     label: "LinkedIn",
     icon: <FaLinkedinIn />,
     color: "text-white",
@@ -38,21 +36,21 @@ const socialLinks = [
 
 const contactInfo = [
   {
-    icon: <FaPhone className="text-sky-300" />,
+    icon: <FaPhone className="text-green-600" />,
     label: "Phone",
-    value: "+91 (234) 567-89",
-    href: "tel:+9123456789",
+    value: "+91 9266594942",
+    href: "tel:+91 9266594942",
   },
   {
-    icon: <MdOutlineEmail className="text-sky-300" />,
+    icon: <MdOutlineEmail className="text-green-600" />,
     label: "Email",
-    value: "info@gmail.com",
-    href: "mailto:info@gmail.com",
+    value: "info@abhishekdm.com",
+    href: "mailto:info@abhishekdm.com",
   },
   {
-    icon: <FaMapMarkedAlt className="text-sky-300" />,
+    icon: <FaMapMarkedAlt className="text-green-600" />,
     label: "Address",
-    value: "123 Dental Street, Smile City, India",
+    value: "New Delhi,India",
   },
 ];
 
@@ -85,7 +83,12 @@ const Footer = () => {
             <img src={logo} alt="Logo" width="60%" />
           </div>
           <p className="text-gray-400 mb-6 ">
-            Providing quality dental care with compassion and professionalism.
+            Abhishek Digital Marketing Agency provides expert SEO services,
+            WordPress website design, custom code website development, and
+            complete digital marketing solutions. Our mission is to craft
+            tailored strategies that drive business growth, enhance online
+            visibility, and deliver measurable results—powered by creativity,
+            dedication, and trust.
           </p>
 
           <div className="flex space-x-2">
@@ -116,7 +119,7 @@ const Footer = () => {
                 {item.href ? (
                   <a
                     href={item.href}
-                    className="hover:text-sky-400 transition-colors text-white"
+                    className="hover:text-green-600 transition-colors text-white"
                   >
                     {item.value}
                   </a>
@@ -136,7 +139,7 @@ const Footer = () => {
           <ul className="space-y-3 text-gray-300">
             {quickLinks.map((link, index) => (
               <li key={index}>
-                <a href={link.href} className="hover:text-white/20 transition">
+                <a href={link.href} className="hover:text-green-600 transition">
                   {link.name}
                 </a>
               </li>
@@ -149,7 +152,6 @@ const Footer = () => {
       <div className="text-center mt-10 text-sm text-gray-500 border-t border-white/10 pt-6">
         © {new Date().getFullYear()} Rahul. All rights reserved.
       </div>
-
     </footer>
   );
 };
