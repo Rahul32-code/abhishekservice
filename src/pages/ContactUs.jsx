@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GiCometSpark } from "react-icons/gi";
 import ContactModal from "../components/ContactModel";
+import contact from "@/gif/contact.gif"
 
 const ContactUs = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
@@ -24,8 +25,9 @@ const ContactUs = () => {
         </div>
         <div className="w-full lg:w-1/2 flex justify-center">
           <img
-            src="https://tse1.mm.bing.net/th/id/OIP.VU6OJERkW29SfnwNfrOIGAHaFo?pid=Api&P=0&h=220"
+            src={contact}
             alt="contact"
+            className="w-auto"
           />
         </div>
       </div>

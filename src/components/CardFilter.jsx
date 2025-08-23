@@ -108,7 +108,7 @@ const cards = [
   {
     name: "Hosting & Deployment",
     type: "Web Design & Development",
-    info: "Cloud hosting setup on platforms like Vercel, Netlify, or AWS.",
+    info: "Cloud hosting setup on platforms like Vercel, Netlify, github, hostinger, webhosting.",
     icon: <FaCloudUploadAlt className="w-10 h-10 text-cyan-600" />,
   },
   {
