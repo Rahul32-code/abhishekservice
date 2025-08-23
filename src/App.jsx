@@ -8,7 +8,7 @@ import ButtonWhatsapp from "./components/ButtonWhatsapp";
 import PhoneButton from "./components/PhoneButton";
 import ContactUs from "./pages/ContactUs";
 import { Toaster } from "react-hot-toast";
-import ScrollToTop from "./components/ScrollToTop";
+
 
 const App = () => {
   return (
@@ -26,7 +26,6 @@ const App = () => {
       <Footer />
 
       {/* scrollToTopwhatsapp & Phone */}
-      <ScrollToTop />
       <ButtonWhatsapp />
       <PhoneButton />
     </div>

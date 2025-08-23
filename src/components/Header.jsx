@@ -4,8 +4,8 @@ import logo from "@/logo.png";
 
 const navList = [
   { href: "#home", label: "Home" },
-  { href: "#services", label: "Services" },
   { href: "#about", label: "About" },
+  { href: "#services", label: "Services" },
 ];
 
 const Header = () => {
