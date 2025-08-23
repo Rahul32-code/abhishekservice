@@ -4,13 +4,10 @@ import {
   FaLinkedinIn,
   FaMapMarkedAlt,
   FaPhone,
-  FaTelegram,
-  FaWhatsapp,
 } from "react-icons/fa";
-import logo from "@/logo.png";
 import { MdOutlineEmail } from "react-icons/md";
 import { ArrowUp } from "lucide-react";
-import { useEffect, useState } from "react";
+import logo from "@/logo.png";
 
 const socialLinks = [
   {
@@ -64,30 +61,13 @@ const quickLinks = [
 ];
 
 const Footer = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const toggleVisibility = () => {
-      const scrollY = window.scrollY;
-      const heroSection = document.getElementById("hero");
-
-      if (heroSection) {
-        const heroHeight = heroSection.offsetHeight;
-        setIsVisible(scrollY > heroHeight);
-      }
-    };
-
-    window.addEventListener("scroll", toggleVisibility);
-    return () => window.removeEventListener("scroll", toggleVisibility);
-  }, []);
-
   return (
-    <footer className="bg-gray-900 text-white py-16 mt-10 relative">
+    <footer className="relative bg-gray-900 text-white py-16 mt-10">
       <div className="container px-4 lg:px-8 grid md:grid-cols-3 gap-10">
         {/* Brand & Social */}
         <div>
           <div className="flex items-center mb-4">
-            <img src={logo} alt="Logo" width="60%" />
+            <img src={logo} alt="Logo" className="w-3/4 max-w-xs" />
           </div>
           <p className="text-gray-400 mb-6">
             Abhishek Digital Marketing Agency provides expert SEO services,
@@ -97,7 +77,6 @@ const Footer = () => {
             visibility, and deliver measurable results—powered by creativity,
             dedication, and trust.
           </p>
-
           <div className="flex space-x-2">
             {socialLinks.map((link, index) => (
               <a
@@ -106,7 +85,7 @@ const Footer = () => {
                 aria-label={link.label}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`hover:scale-110 transform transition duration-300 p-2 rounded-xl ${link.bg} ${link.color} text-xl`}
+                className={`hover:scale-110 transition-transform duration-300 p-2 rounded-xl ${link.bg} ${link.color} text-xl`}
               >
                 {link.icon}
               </a>
@@ -146,7 +125,10 @@ const Footer = () => {
           <ul className="space-y-3 text-gray-300">
             {quickLinks.map((link, index) => (
               <li key={index}>
-                <a href={link.href} className="hover:text-green-600 transition">
+                <a
+                  href={link.href}
+                  className="hover:text-green-600 transition-colors"
+                >
                   {link.name}
                 </a>
               </li>
@@ -156,23 +138,18 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="text-center mt-10 text-sm text-gray-500 border-t border-white/10 pt-6">
-        © {new Date().getFullYear()} Abhishek Digital Marketing Agency. All
-        rights reserved.
-      </div>
-
-      {/* Scroll to Top Button */}
-      <div
-        className={`fixed bottom-8 left-8 flex items-center justify-center transition-opacity duration-500 ${
-          isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
-        }`}
-      >
+      <div className="mt-12 border-t border-white/10 pt-6 px-4 flex flex-col-reverse md:flex-row justify-between items-center gap-4">
         <a
-          href="#hero"
-          className="text-white shadow-lg cursor-pointer rounded-xl p-2 bg-green-900 hover:bg-green-800 transition duration-300 animate-bounce"
+          href="#home"
+          className="p-2 rounded-full bg-green-900 hover:bg-green-800 transition-colors animate-bounce"
+          aria-label="Back to top"
         >
-          <ArrowUp className="text-6xl w-8 h-8" />
+          <ArrowUp />
         </a>
+        <p className="text-sm text-gray-400 text-center md:text-center w-full">
+          © {new Date().getFullYear()} Abhishek Digital Marketing Agency. All
+          rights reserved.
+        </p>
       </div>
     </footer>
   );
