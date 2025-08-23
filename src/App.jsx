@@ -25,7 +25,6 @@ const App = () => {
 
       <Footer />
 
-      {/* scrollToTopwhatsapp & Phone */}
       <ButtonWhatsapp />
       <PhoneButton />
     </div>

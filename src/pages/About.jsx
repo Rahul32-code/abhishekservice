@@ -1,46 +1,62 @@
-import { FaUserMd } from "react-icons/fa";
+import React, { useState } from "react";
 
-const About = () => {
+const ExpandableCards = () => {
+  const [active, setActive] = useState(null);
+
+  const cards = [
+    {
+      title: "Designers",
+      desc: "Streamline your design process with AI-powered tools...",
+      img: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=400",
+    },
+    {
+      title: "Marketers",
+      desc: "Reach your audience with powerful marketing tools...",
+      img: "https://images.unsplash.com/photo-1503602642458-232111445657?w=400",
+    },
+    {
+      title: "Filmmakers",
+      desc: "Create cinematic experiences with ease...",
+      img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400",
+    },
+    {
+      title: "Content Creators",
+      desc: "Unleash creativity with seamless tools...",
+      img: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400",
+    },
+  ];
+
   return (
-    <section id="about" className="scroll-m-20 bg-white/25 py-10 px-4">
-      <div className="text-start sm:text-center mb-10 ">
-        <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-black mb-4">
-          About Us
-        </h2>
-        <p className="text-slate-700 max-w-2xl mx-auto leading-tight">
-          Explore the wide range of dental services we offer to keep your smile
-          healthy and bright.
-        </p>
-      </div>
-      <div className="container mx-auto sm:px-6 lg:px-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
-        <div className="w-full lg:w-1/2 flex justify-center">
+    <div className="flex gap-4 w-full h-[400px]">
+      {cards.map((card, index) => (
+        <div
+          key={index}
+          className={`relative rounded-2xl overflow-hidden transition-all duration-500 ease-in-out cursor-pointer 
+          ${active === index ? "flex-[3]" : "flex-[1]"}`}
+          onMouseEnter={() => setActive(index)}
+          onMouseLeave={() => setActive(null)}
+        >
+          {/* Background Image */}
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX0n0AxrEC4HAkcvZFo8YrJBVh7sNNixSG1w&s"
-            alt="about"
-            className="w-80 lg:w-[420px] rounded-3xl shadow-md"
+            src={card.img}
+            alt={card.title}
+            className="absolute inset-0 w-full h-full object-cover"
           />
-        </div>
-        <div className="w-full lg:w-1/2 space-y-6 text-start sm:text-center lg:text-left">
-          <div className="flex items-center justify-start sm:justify-center lg:justify-start space-x-2">
-            <FaUserMd className="text-green-600 w-7 h-7" />
-            <h2 className="text-xl sm:text-2xl lg:text3xl font-bold text-green-600">About Us</h2>
+
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black/40"></div>
+
+          {/* Content */}
+          <div className="relative h-full flex flex-col justify-center items-center text-white p-6">
+            <h2 className="text-xl font-bold">{card.title}</h2>
+            {active === index && (
+              <p className="mt-4 text-sm text-center">{card.desc}</p>
+            )}
           </div>
-          <p className="text-gray-700 text-lg leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            earum vero dignissimos, doloremque corrupti sapiente unde quae
-            corporis voluptate, quisquam eius fuga explicabo repellendus quasi
-            distinctio nulla iure maiores suscipit.
-          </p>
-          <p className="text-gray-700 text-lg leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nobis,
-            sint optio temporibus iure dicta at inventore natus veniam maiores
-            dolore alias placeat reiciendis ipsum doloremque error quisquam
-            eligendi. Assumenda.
-          </p>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
   );
 };
 
-export default About;
+export default ExpandableCards;
