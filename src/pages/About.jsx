@@ -1,6 +1,7 @@
 import { useState } from "react";
 import s1 from "@/about/s1.png";
 import s2 from "@/about/s2.jpeg";
+import r from "@/about/r.png"
 
 const ExpandableCards = () => {
   const [active, setActive] = useState(null);
@@ -9,17 +10,17 @@ const ExpandableCards = () => {
     {
       title: "Abhishek Kumar",
       desc: "I’m Abhishek Kumar, a dedicated digital marketer. Since founding Abhishek Digital Marketing Agency on October 3, 2024, I’ve helped businesses grow online by creating innovative websites and effective marketing strategies that increase visibility, drive traffic, and deliver measurable results.",
-      img: s1,
+      img: s2,
     },
     {
       title: "Abhishek Digital Marketing Agency",
       desc: "Founded on October 3, 2024, Abhishek Digital Marketing Agency specializes in crafting responsive websites and result-driven digital marketing strategies. We help businesses enhance online presence, attract more traffic, and grow revenue through SEO, social media, and creative solutions, delivering measurable results that empower brands digitally.",
-      img: s2,
+      img: s1,
     },
     {
-      title: "Filmmakers",
-      desc: "Create cinematic experiences with tools designed for storytellers and video creators.",
-      img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800",
+      title: "Rahul Developer",
+      desc: "I’m a Full Stack developer who builds modern, responsive, and scalable web applications. I focus on creating real-time, user-friendly digital products — from blogging platforms to admin dashboards — with clean code and creative design.",
+      img: r,
     },
   ];
 
