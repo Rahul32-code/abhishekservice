@@ -56,16 +56,16 @@ const contactInfo = [
 
 const quickLinks = [
   {
+    name: "Home",
+    href: "#hero"
+  },
+  {
     name: "About Us",
     href: "#about",
   },
   {
     name: "Services",
     href: "#service",
-  },
-  {
-    name: "About Us",
-    href: "#about",
   },
   {
     name: "Contact Us",
@@ -150,7 +150,7 @@ const Footer = () => {
 
       {/* Bottom Footer */}
       <div className="text-center mt-10 text-sm text-gray-500 border-t border-white/10 pt-6">
-        © {new Date().getFullYear()} Rahul. All rights reserved.
+        © {new Date().getFullYear()} Abhishek Digital Marketing Agency. All rights reserved.
       </div>
     </footer>
   );
