@@ -3,7 +3,7 @@ import s1 from "@/about/s1.png";
 import s2 from "@/about/s2.jpeg";
 import r from "@/about/r.png"
 
-const ExpandableCards = () => {
+const About = () => {
   const [active, setActive] = useState(null);
 
   const cards = [
@@ -72,4 +72,4 @@ const ExpandableCards = () => {
   );
 };
 
-export default ExpandableCards;
+export default About;
